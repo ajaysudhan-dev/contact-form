@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+
+    <section class="w-full h-screen flex justify-center items-center form-bg">
+
+        <!-- FORM CONTAINER -->
+        <div class="w-[450px] bg-white rounded-xl shadow-xl p-5 border-2 border-blue-500">
+
+
+
+            <!-- FORM -->
+            <form id="form" class="flex flex-col gap-3">
+
+                <!-- TITLE -->
+                <h1 class="text-2xl font-bold text-center text-blue-600 mb-2">
+                    CONTACT FORM
+                </h1>
+
+                <!-- FIRST NAME -->
+                <div class="flex items-center gap-3">
+
+                    <label for="first-name" class="w-28 font-bold text-sm text-gray-700">
+                        FIRST NAME
+                    </label>
+
+                    <div class="flex-1">
+
+                        <input type="text" id="first-name" placeholder="ENTER FIRST NAME"
+                            class="w-full border-2 border-blue-500 rounded-lg p-2 text-sm focus:bg-blue-100 focus:outline-none">
+
+                        <span id="first-name-error" class="text-red-500 text-xs"></span>
+
+                    </div>
+
+                </div>
+
+                <!-- LAST NAME -->
+                <div class="flex items-center gap-3">
+
+                    <label for="last-name" class="w-28 font-bold text-sm text-gray-700">
+                        LAST NAME
+                    </label>
+
+                    <div class="flex-1">
+
+                        <input type="text" id="last-name" placeholder="ENTER LAST NAME"
+                            class="w-full border-2 border-blue-500 rounded-lg p-2 text-sm focus:bg-blue-100 focus:outline-none">
+
+                        <span id="last-name-error" class="text-red-500 text-xs"></span>
+
+                    </div>
+
+                </div>
+
+                <!-- PHONE NUMBER -->
+                <div class="flex items-center gap-3">
+
+                    <label for="number" class="w-28 font-bold text-sm text-gray-700">
+                        PHONE NUMBER
+                    </label>
+
+                    <div class="flex-1">
+
+                        <input type="number" id="number" placeholder="ENTER PHONE NUMBER"
+                            class="w-full border-2 border-blue-500 rounded-lg p-2 text-sm focus:bg-blue-100 focus:outline-none">
+
+                        <span id="number-error" class="text-red-500 text-xs"></span>
+
+                    </div>
+
+                </div>
+
+                <!-- EMAIL -->
+                <div class="flex items-center gap-3">
+
+                    <label for="email" class="w-28 font-bold text-sm text-gray-700">
+                        EMAIL
+                    </label>
+
+                    <div class="flex-1">
+
+                        <input type="email" id="email" placeholder="ENTER EMAIL"
+                            class="w-full border-2 border-blue-500 rounded-lg p-2 text-sm focus:bg-blue-100 focus:outline-none">
+
+                        <span id="email-error" class="text-red-500 text-xs"></span>
+
+                    </div>
+
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="flex items-start gap-3">
+
+                    <label for="comment" class="w-28 font-bold text-sm text-gray-700 pt-2">
+                        MESSAGE
+                    </label>
+
+                    <div class="flex-1">
+
+                        <textarea id="comment" placeholder="ENTER MESSAGE"
+                            class="w-full border-2 border-blue-500 rounded-lg p-2 text-sm h-24 resize-none focus:bg-blue-100 focus:outline-none"></textarea>
+
+                        <span id="comment-error" class="text-red-500 text-xs"></span>
+
+                    </div>
+
+                </div>
+
+                <!-- SUCCESS MESSAGE -->
+                <div id="success-box"
+                    class="hidden bg-green-500 text-white text-center p-2 rounded-lg mb-3 font-bold text-sm">
+
+                    Form Submitted Successfully
+
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <input type="submit" value="SUBMIT" id="submitBtn"
+                    class="bg-blue-600 text-white font-bold py-2 rounded-lg cursor-pointer hover:bg-blue-700 transition text-sm">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
