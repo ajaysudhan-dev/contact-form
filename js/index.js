@@ -86,6 +86,7 @@ form.addEventListener("submit", function (event) {
         <p>Form Submitted Successfully</p>
         
     `
+    form.reset()
 }
 
 })
